@@ -216,7 +216,7 @@ function importUModel(path) {
     ctrlAndV();
     sleep.msleep(500)
     enter();
-    sleep.msleep(1500)
+    sleep.msleep(2000)
 }
 
 

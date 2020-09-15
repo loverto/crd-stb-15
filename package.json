@@ -1,6 +1,6 @@
 {
   "name": "crd-stb-15",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CRD手提包15寸排版工具",
   "main": "src/main/main.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "lint": "tslint src/**/*.ts -- --fix",
     "dist-win": "electron-builder --win --ia32",
     "start": "chcp 65001 && electron .",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "changelog": "conventional-changelog-writer -p angular -i CHANGELOG.md -s -r 0",
     "log": "conventional-changelog",
     "package": "electron-packager . HelloWorld --platform=win32 --arch=ia32 --icon=icon.ico --out=./out --asar --app-version=0.0.1",
     "rebuildwinax:gyp": "cd ./node_modules/winax && node-gyp rebuild --arch=ia32 --build-from-source --runtime=electron --msvs_version=2017  --target=8.2.4 --dist-url=https://www.electronjs.org/headers",
